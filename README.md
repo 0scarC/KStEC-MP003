@@ -4,9 +4,9 @@
 
 ## References
 
-### Multi=room Platformer Tutorial with Javascript and HTML Canvas
+### Multi-room Platformer Tutorial with Javascript and HTML Canvas
 - **Initial code for Play Area, Player Movement, and Level Design**
-[Youtube_Video] (https://www.youtube.com/watch?v=Lcdc2v-9PjA&t=260s)
+[Youtube Video] (https://www.youtube.com/watch?v=Lcdc2v-9PjA&t=260s)
 
 ## To Do
 
