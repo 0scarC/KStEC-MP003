@@ -13,9 +13,16 @@ function animate() {
 
     player.draw()
     player.update()
-    
-    console.log('Animated')
 }
 
-
 //animate()
+
+window.addEventListener('keydown', (event) => {
+    console.log(event.key)
+    switch (event.key) {
+        case 'w':
+        case 'ArrowUp':
+            if (player.velocity.y === 0) player.velocity.y = -20
+            break
+    }
+})
