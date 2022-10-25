@@ -4,13 +4,13 @@ const c = canvas.getContext('2d')
 canvas.width = 64 * 16 //1024
 canvas.height = 64 * 9 //576
 
-class Sprite {
-    constructor(position) {
-        this.position = position
-        this.image = new Image()
-        this.image.src = ''
-    }
-}
+const bckGrdLvl1 = new Sprite({
+    position: {
+        x: 0, 
+        y: 0
+    },
+    imgSrc: './IMG/backgroundLevel1.png'
+})
 
 const player = new Player()
 
@@ -28,8 +28,10 @@ const keys = {
 
 function animate() {
     window.requestAnimationFrame(animate)
-    c.fillStyle = 'white'
-    c.fillRect(0, 0, canvas.width, canvas.height)
+    // c.fillStyle = 'white'
+    // c.fillRect(0, 0, canvas.width, canvas.height)
+
+    bckGrdLvl1.draw()
 
     player.velocity.x = 0
     if (keys.d.pressed) player.velocity.x = 5
